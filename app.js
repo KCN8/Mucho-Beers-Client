@@ -6,13 +6,13 @@ $(document).ready( () => {
       $('main').append(`
             <div class="list-group">
               <a href="#" class="list-group-item active">
-                <h4 class="list-group-item-heading">${data[i].name}</h4>
-                <p class="list-group-item-text">${data[i].brewery}</p>
-                <p class="list-group-item-text">${data[i].style}</p>
-                <p class="list-group-item-text">${data[i].rating}</p>
+                <h4 class="list-group-item-heading">Beer Name: ${data[i].name}</h4>
+                <p class="list-group-item-text">Brewery: ${data[i].brewery}</p>
+                <p class="list-group-item-text">Style: ${data[i].style}</p>
+                <p class="list-group-item-text">Rating: ${data[i].rating}</p>
               </a>
             </div>`
-)
+          )
     }
   })
 })
