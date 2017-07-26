@@ -7,3 +7,12 @@
 .titlesearch {
   margin-left: 70vw;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.beerForm {
+  margin-bottom: 5vh;
+}

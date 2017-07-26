@@ -4,7 +4,7 @@ $(document).ready( () => {
   .then ((data) => {
     for (var i = 0; i < data.length; i++) {
       $('main').append(`
-            <div class="col-lg-6 list-group">
+            <div class="list-group">
               <a href="#" class="list-group-item active">
                 <h4 class="list-group-item-heading">Beer Name: ${data[i].name}</h4>
                 <p class="list-group-item-text">Brewery: ${data[i].brewery}</p>
@@ -15,4 +15,5 @@ $(document).ready( () => {
           )
     }
   })
+  
 })
