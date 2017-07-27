@@ -13,7 +13,7 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
-              <img class="titlelogo" alt="iheartbeer image" src="images/iheartbeer.jpg">
+              <p class="navbar-text titlelogo">SHOW ME ALL MY BEERS</p>
             </a>
             <form class="titlesearch navbar-form navbar-left" role="search">
               <div class="form-group">
@@ -28,18 +28,25 @@
     <div class="container-fluid">
       <main class="col-lg-8">
       </main>
-      <div class="beerForm col-lg-4 input-group beerForm">
-        <span class="input-group-addon" id="basic-addon1">Beer Name</span>
-        <input type="text" class="form-control" placeholder="New Beer" aria-describedby="basic-addon1">
-      </div>
-      <div class="beerForm col-lg-4 input-group beerForm">
-        <span class="input-group-addon" id="basic-addon1">Brewery Name</span>
-        <input type="text" class="form-control" placeholder="Brewery" aria-describedby="basic-addon1">
-      </div>
-      <div class="beerForm col-lg-4 input-group beerForm">
-        <span class="input-group-addon" id="basic-addon1">Beer Style</span>
-        <input type="text" class="form-control" placeholder="Style" aria-describedby="basic-addon1">
-      </div>
+      <form class="col-lg-4" action="index.html" method="post">
+        <div class="input-group beerForm">
+          <span class="input-group-addon" id="basic-addon1">Beer Name</span>
+          <input id="name" type="text" class="form-control" placeholder="New Beer" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group beerForm">
+          <span class="input-group-addon" id="basic-addon1">Brewery Name</span>
+          <input id="brewery" type="text" class="form-control" placeholder="Brewery" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group beerForm">
+          <span class="input-group-addon" id="basic-addon1">Beer Style</span>
+          <input id="style" type="text" class="form-control" placeholder="Style" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group beerForm">
+          <span class="input-group-addon" id="basic-addon1">Rating</span>
+          <input id="rating" type="text" class="form-control" placeholder="1-10" aria-describedby="basic-addon1">
+        </div>
+        <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+      </form>
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
